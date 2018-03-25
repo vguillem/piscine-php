@@ -1,0 +1,1 @@
+<script langage="javascript">top.frames['chat'].location = 'chat.php';</script>

@@ -1,0 +1,35 @@
+<HTML>
+<head>
+<meta charset="UTF-8"/>
+</head>
+<body>
+<div style="width:200px;	height:200px;	border-radius:50%;	background-color:red;" id="un" class="balloon" onclick="balloon_c()" onmouseout="balloon_out()">
+</div>
+<script language="javascript" type="text/javascript">
+var c = 'red';
+var tab = ["red", "green", "blue"]
+var key = 1000000000;
+var size = 200;
+var elem = document.getElementById('un').style;
+function balloon_size() {
+	elem.width = size;
+	elem.height = size;
+}
+function balloon_out() {
+if (size > 200)
+{
+	size -= 5;
+	elem.backgroundColor = tab[Math.abs(--key % 3)];
+	balloon_size();
+}
+}
+function balloon_c() {
+	elem.backgroundColor = tab[Math.abs(++key % 3)];
+size += 10;
+if (size > 420)
+	size = 200;
+	balloon_size();
+}
+</script>
+</body>
+</HTML>

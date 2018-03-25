@@ -1,0 +1,4 @@
+<html><head><title>Nice page</title></head>
+<body>Hello World <a href=http://fd.cd title="un lien">Ceci est un lien</a>
+<br /><a href=http://www.fdf.com> Et ca aussi <img src=wrong.image title="et encore ca"</a>
+</body></html>

@@ -1,0 +1,25 @@
+body {
+	background-color: black;
+}
+.un {
+	background-color: black;
+	height: 10px;
+	width: 5px;
+	border-color: blue;
+	border-style: outset;
+}
+.deux {
+	background-color: green;
+	height: 10px;
+	width: 5px;
+}
+.trois {
+	background-color: grey;
+	height: 10px;
+	width: 5px;
+}
+.quatre {
+	background-color: red;
+	height: 10px;
+	width: 5px;
+}

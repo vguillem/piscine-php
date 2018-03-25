@@ -1,0 +1,28 @@
+body {
+	background-color: black;
+}
+header {
+	text-align: center;
+	color: teal;
+	text-size: 20px;
+	height: 200px;
+}
+.all {
+}
+.middle {
+}
+.choice {
+	background-color: silver;
+	width: 200px;
+	height: 600px;
+	float: left;
+	margin-right: 20px;
+}
+.map {
+}
+footer {
+	font-style: italic;
+	font-family: monospace;
+	text-align: right;
+	color: teal;
+}

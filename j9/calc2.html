@@ -1,0 +1,79 @@
+<HTML>
+<head>
+<meta charset="UTF-8"/>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div>
+<form onsubmit="return calc()">
+<input type="text" id="un">
+<SELECT id="operator">
+<OPTION>+
+<OPTION>-
+<OPTION>*
+<OPTION>/
+<OPTION>%
+</SELECT>
+<input type="text" id="deux">
+<input type="submit" value="Try me!">
+</form>
+</div>
+<script language="javascript" type="text/javascript">
+window.onload = function () {
+setInterval("alert('Please, use me...')", 30000);
+}
+function calc() {
+var op = document.getElementById("operator").value;
+var op = $('#operator').val();
+var un = parseInt($('#un').val());
+var deux = parseInt($('#deux').val());
+if (un < 0 || deux < 0)
+{
+	alert("Error :(");
+	return false;
+}
+switch (op) {
+	case '+':
+		console.log(un + deux);
+		alert(un + deux);
+		break;
+	case '-':
+		console.log(un - deux);
+		alert(un - deux);
+		break;
+	case '*':
+		console.log(un * deux);
+		alert(un * deux);
+		break;
+	case '/':
+		if (deux == 0)
+		{
+			console.log("It's over 9000!");
+			alert("It's over 9000!");
+		}
+		else
+		{
+			console.log(un / deux);
+			alert(un / deux);
+		}
+		break;
+	case '%':
+		if (deux == 0)
+		{
+			console.log("It's over 9000!");
+			alert("It's over 9000!");
+		}
+		else
+		{
+			console.log(un % deux);
+			alert(un % deux);
+		}
+		break;
+	default:
+		break;
+}
+	return false;
+}
+</script>
+</body>
+</HTML>
